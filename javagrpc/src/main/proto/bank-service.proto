@@ -11,6 +11,15 @@ message Balance {
   int32 amount = 1;
 }
 
+message WithdrawRequest {
+  int32 account_number = 1;
+  int32 amount = 2;
+}
+
+message Money{
+  int32 value = 1;
+}
+
 /*
 서비스 정의
 입력 변수 : getBalance(BalanceCheckRequest)
@@ -22,5 +31,5 @@ service BankService {
   rpc getBalance(BalanceCheckRequest) returns (Balance);
 
   // Server-streaming
-
+  rpc withdraw(WithdrawRequest) returns (stream Money);
 }
