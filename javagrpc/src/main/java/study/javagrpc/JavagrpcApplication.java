@@ -3,7 +3,7 @@ package study.javagrpc;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import study.javagrpc.server.unary.BankService;
+import study.javagrpc.server.BankService;
 
 import java.io.IOException;
 
