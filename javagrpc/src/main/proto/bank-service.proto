@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "study.javagrpc";
+
+message BalanceCheckRequest {
+  int32 account_number = 1;
+}
+
+message Balance {
+  int32 amount = 1;
+}
+
+/*
+서비스 정의
+입력 변수 : getBalance(BalanceCheckRequest)
+출력 변수 : Balance
+*/
+service BankService {
+
+  // Unary
+  rpc getBalance(BalanceCheckRequest) returns (Balance);
+
+  // Server-streaming
+
+}
