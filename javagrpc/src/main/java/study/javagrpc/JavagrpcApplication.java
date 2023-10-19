@@ -4,6 +4,7 @@ import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import study.javagrpc.server.BankService;
+import study.javagrpc.server.TransferService;
 
 import java.io.IOException;
 
@@ -14,6 +15,7 @@ public class JavagrpcApplication {
 
 		Server server = ServerBuilder.forPort(11111)
 				.addService(new BankService())
+				.addService(new TransferService())
 				.build();
 
 		server.start();
