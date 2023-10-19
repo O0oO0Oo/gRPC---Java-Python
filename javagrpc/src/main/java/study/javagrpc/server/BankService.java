@@ -42,4 +42,10 @@ public class BankService extends BankServiceGrpc.BankServiceImplBase {
         }
         responseObserver.onCompleted();
     }
+
+    // Client streaming
+    @Override
+    public StreamObserver<DepositRequest> cashDeposit(StreamObserver<Balance> responseObserver) {
+        return new CashStreamingRequest(responseObserver);
+    }
 }
