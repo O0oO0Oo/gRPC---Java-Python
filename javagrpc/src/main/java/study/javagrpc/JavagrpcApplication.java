@@ -3,8 +3,8 @@ package study.javagrpc;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import study.javagrpc.server.BankService;
-import study.javagrpc.server.TransferService;
+import study.javagrpc.server.rpctypes.BankService;
+import study.javagrpc.server.rpctypes.TransferService;
 
 import java.io.IOException;
 

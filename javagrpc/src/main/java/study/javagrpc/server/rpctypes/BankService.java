@@ -1,4 +1,4 @@
-package study.javagrpc.server;
+package study.javagrpc.server.rpctypes;
 
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
