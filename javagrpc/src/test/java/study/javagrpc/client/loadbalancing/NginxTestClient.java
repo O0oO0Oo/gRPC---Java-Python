@@ -34,7 +34,8 @@ public class NginxTestClient {
                     .setAccountNumber(10)
                     .build();
 
-            Balance balance = this.blockingStub.getBalance(balanceCheckRequest);
+            Balance balance = this.blockingStub.
+                    getBalance(balanceCheckRequest);
             System.out.println("balance = " + balance);
         }
     }
