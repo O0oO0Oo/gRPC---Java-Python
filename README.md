@@ -1,2 +1,2 @@
-# gRPC---Java-Python
+# gRPC-Java
 gRPC 공부
